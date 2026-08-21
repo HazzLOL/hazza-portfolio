@@ -1,0 +1,7 @@
+Place your MP4 files in this folder with these exact names:
+
+football-system.mp4
+combat-system.mp4
+movement-system.mp4
+
+For quick loading, export each video as H.264 MP4 at 1080p and try to keep each file below 25 MB.
