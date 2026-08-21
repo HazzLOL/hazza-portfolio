@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Hazza — Roblox developer portfolio.">
+  <meta name="description" content="HAZZA — Roblox Developer Portfolio">
   <meta name="theme-color" content="#0a0808">
   <title>Hazza — Roblox Developer</title>
 
@@ -83,15 +83,25 @@
 
     .project:last-child { margin-bottom: 0; }
 
-    video {
-      display: block;
+    .video-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       width: 100%;
-      aspect-ratio: 16 / 9;
       margin-bottom: 20px;
-      object-fit: cover;
+      padding: 22px;
+      color: #e8e4e4;
       background: #120d0d;
       border: 1px solid #302424;
+      text-decoration: none;
     }
+
+    .video-link:hover {
+      color: #ffffff;
+      border-color: #b8293d;
+    }
+
+    .video-link span:last-child { color: #b8293d; }
 
     .project h3 {
       margin: 0 0 5px;
@@ -137,7 +147,7 @@
 <body>
   <div class="page">
     <header>
-      <strong>Hazza</strong>
+      <strong>HAZZA</strong>
       <nav>
         <a href="#work">Work</a>
         <a href="#about">About</a>
@@ -148,32 +158,35 @@
     <main>
       <div class="intro">
         <h1>Roblox developer<span>.</span></h1>
-        <p>I make gameplay systems in Luau, with a focus on combat, movement and multiplayer mechanics.</p>
+        <p>Contributed to 4.7M visits.</p>
       </div>
 
       <section id="work">
         <h2>Work</h2>
 
         <article class="project">
-          <video controls muted playsinline preload="metadata">
-            <source src="videos/football-system.mp4" type="video/mp4">
-          </video>
+          <a class="video-link" href="https://www.youtube.com/watch?v=FOOTBALL_VIDEO_ID" target="_blank" rel="noopener">
+            <span>Watch football system on YouTube</span>
+            <span>↗</span>
+          </a>
           <h3>Football system</h3>
           <p>Ball control, physics and multiplayer replication.</p>
         </article>
 
         <article class="project">
-          <video controls muted playsinline preload="metadata">
-            <source src="videos/combat-system.mp4" type="video/mp4">
-          </video>
+          <a class="video-link" href="https://www.youtube.com/watch?v=COMBAT_VIDEO_ID" target="_blank" rel="noopener">
+            <span>Watch combat system on YouTube</span>
+            <span>↗</span>
+          </a>
           <h3>Combat system</h3>
           <p>Combos, blocking, hit reactions and effects.</p>
         </article>
 
         <article class="project">
-          <video controls muted playsinline preload="metadata">
-            <source src="videos/movement-system.mp4" type="video/mp4">
-          </video>
+          <a class="video-link" href="https://www.youtube.com/watch?v=MOVEMENT_VIDEO_ID" target="_blank" rel="noopener">
+            <span>Watch movement system on YouTube</span>
+            <span>↗</span>
+          </a>
           <h3>Movement system</h3>
           <p>Momentum-based movement and camera work.</p>
         </article>
@@ -181,16 +194,16 @@
 
       <section class="about" id="about">
         <h2>About</h2>
-        <p>I’ve worked on closed-community projects and contributed to a Roblox experience with over 4.7 million visits.</p>
+        <p>I’ve worked on closed-community projects and contributed to a Roblox experience with over 4.7 million visits. I specialise in Frontend scripting. </p>
       </section>
 
       <section class="contact" id="contact">
         <h2>Contact</h2>
         <p>Available for Roblox development work.</p>
         <div>
-          <a href="mailto:YOUR-EMAIL@example.com">Email</a>
-          <a href="https://x.com/YOUR_USERNAME" target="_blank" rel="noopener">X / Twitter</a>
-          <a href="https://www.roblox.com/users/YOUR_USER_ID/profile" target="_blank" rel="noopener">Roblox</a>
+          <a href="mailto:hahazz1231@outlook.com">Email</a>
+          <a href="https://x.com/hahazz17" target="_blank" rel="noopener">X / Twitter</a>
+          <a href="https://www.roblox.com/users/4684940646/profile" target="_blank" rel="noopener">Roblox</a>
         </div>
       </section>
     </main>
