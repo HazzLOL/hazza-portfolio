@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hazza — Roblox developer portfolio.">
+  <meta name="theme-color" content="#0a0808">
+  <title>Hazza — Roblox Developer</title>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      color: #e8e4e4;
+      background: #0a0808;
+      font: 16px/1.6 Arial, sans-serif;
+    }
+
+    a { color: inherit; }
+
+    .page {
+      width: min(820px, calc(100% - 32px));
+      margin: auto;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 28px 0;
+      border-bottom: 1px solid #2a2020;
+    }
+
+    header strong { font-size: 18px; }
+
+    nav { display: flex; gap: 20px; }
+
+    nav a,
+    .contact a {
+      color: #a99f9f;
+      text-decoration: none;
+    }
+
+    nav a:hover,
+    .contact a:hover { color: #b8293d; }
+
+    .intro {
+      padding: 100px 0;
+      border-bottom: 1px solid #2a2020;
+    }
+
+    h1 {
+      margin: 0 0 16px;
+      font-size: clamp(48px, 10vw, 76px);
+      line-height: 1;
+      letter-spacing: -3px;
+    }
+
+    h1 span { color: #b8293d; }
+
+    .intro p {
+      max-width: 540px;
+      margin: 0;
+      color: #a99f9f;
+      font-size: 18px;
+    }
+
+    section { padding: 75px 0; }
+
+    h2 {
+      margin: 0 0 35px;
+      font-size: 28px;
+    }
+
+    .project {
+      padding: 0 0 55px;
+      margin: 0 0 55px;
+      border-bottom: 1px solid #2a2020;
+    }
+
+    .project:last-child { margin-bottom: 0; }
+
+    video {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      margin-bottom: 20px;
+      object-fit: cover;
+      background: #120d0d;
+      border: 1px solid #302424;
+    }
+
+    .project h3 {
+      margin: 0 0 5px;
+      font-size: 22px;
+    }
+
+    .project p,
+    .about p,
+    .contact p {
+      margin: 0;
+      color: #9e9595;
+    }
+
+    .about,
+    .contact { border-top: 1px solid #2a2020; }
+
+    .contact div {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 22px;
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      padding: 25px 0;
+      color: #6f6666;
+      border-top: 1px solid #2a2020;
+      font-size: 12px;
+    }
+
+    @media (max-width: 520px) {
+      header { align-items: flex-start; }
+      nav { gap: 12px; font-size: 14px; }
+      .intro { padding: 75px 0; }
+      section { padding: 60px 0; }
+      footer { gap: 15px; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <header>
+      <strong>Hazza</strong>
+      <nav>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="intro">
+        <h1>Roblox developer<span>.</span></h1>
+        <p>I make gameplay systems in Luau, with a focus on combat, movement and multiplayer mechanics.</p>
+      </div>
+
+      <section id="work">
+        <h2>Work</h2>
+
+        <article class="project">
+          <video controls muted playsinline preload="metadata">
+            <source src="videos/football-system.mp4" type="video/mp4">
+          </video>
+          <h3>Football system</h3>
+          <p>Ball control, physics and multiplayer replication.</p>
+        </article>
+
+        <article class="project">
+          <video controls muted playsinline preload="metadata">
+            <source src="videos/combat-system.mp4" type="video/mp4">
+          </video>
+          <h3>Combat system</h3>
+          <p>Combos, blocking, hit reactions and effects.</p>
+        </article>
+
+        <article class="project">
+          <video controls muted playsinline preload="metadata">
+            <source src="videos/movement-system.mp4" type="video/mp4">
+          </video>
+          <h3>Movement system</h3>
+          <p>Momentum-based movement and camera work.</p>
+        </article>
+      </section>
+
+      <section class="about" id="about">
+        <h2>About</h2>
+        <p>I’ve worked on closed-community projects and contributed to a Roblox experience with over 4.7 million visits.</p>
+      </section>
+
+      <section class="contact" id="contact">
+        <h2>Contact</h2>
+        <p>Available for Roblox development work.</p>
+        <div>
+          <a href="mailto:YOUR-EMAIL@example.com">Email</a>
+          <a href="https://x.com/YOUR_USERNAME" target="_blank" rel="noopener">X / Twitter</a>
+          <a href="https://www.roblox.com/users/YOUR_USER_ID/profile" target="_blank" rel="noopener">Roblox</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>© 2026 Hazza</span>
+      <span>hazza-rblx.com</span>
+    </footer>
+  </div>
+</body>
+</html>
