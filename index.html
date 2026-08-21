@@ -83,25 +83,13 @@
 
     .project:last-child { margin-bottom: 0; }
 
-    .video-link {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+    .video-embed {
       width: 100%;
+      aspect-ratio: 16 / 9;
       margin-bottom: 20px;
-      padding: 22px;
-      color: #e8e4e4;
       background: #120d0d;
       border: 1px solid #302424;
-      text-decoration: none;
     }
-
-    .video-link:hover {
-      color: #ffffff;
-      border-color: #b8293d;
-    }
-
-    .video-link span:last-child { color: #b8293d; }
 
     .project h3 {
       margin: 0 0 5px;
@@ -165,30 +153,19 @@
         <h2>Work</h2>
 
         <article class="project">
-          <a class="video-link" href="https://www.youtube.com/watch?v=xb4b1NVsoGI" target="_blank" rel="noopener">
-            <span>Watch football system on YouTube</span>
-            <span>↗</span>
-          </a>
+          <iframe class="video-embed" src="https://www.youtube-nocookie.com/embed/xb4b1NVsoGI" title="Football system demonstration" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           <h3>Football system</h3>
           <p>Ball control, physics and multiplayer replication.</p>
         </article>
 
         <article class="project">
-          <a class="video-link" href="https://www.youtube.com/watch?v=ECU05THU_ec" target="_blank" rel="noopener">
-            <span>Watch combat system on YouTube</span>
-            <span>↗</span>
-          </a>
+          <iframe class="video-embed" src="https://www.youtube-nocookie.com/embed/ECU05THU_ec" title="Combat system demonstration" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           <h3>Combat system</h3>
           <p>Combos, blocking, hit reactions and effects.</p>
         </article>
 
         <article class="project">
-
-          
-          <a class="video-link" href="https://www.youtube.com/watch?v=a8XWMVyObS0" target="_blank" rel="noopener">
-            <span>Watch movement system on YouTube</span>
-            <span>↗</span>
-          </a>
+          <iframe class="video-embed" src="https://www.youtube-nocookie.com/embed/a8XWMVyObS0" title="Swinging movement system demonstration" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           <h3>Movement system</h3>
           <p>Momentum-based movement and camera work.</p>
         </article>
